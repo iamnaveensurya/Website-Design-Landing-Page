@@ -1,0 +1,137 @@
+/* Resetting Browser Defult values */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navy-blue:#191970;
+    --light-navry-blue:#3a3a5f;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    width: auto;
+    height: 100vh;
+    background-image: url( '../images/backcover.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 840px;
+}
+
+.main-div{
+    padding: 20px 50px;
+}
+nav{
+    display: flex;
+    align-items: center;
+   
+}
+nav img{
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+
+}
+nav .nav-items{
+    display: flex;
+    flex: 4;
+    margin: 0px 14%;
+    justify-content:space-around ;
+    
+    /* margin-left: 100px; */
+}
+.nav-item{
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-navry-blue);
+    
+}
+.nav-item:hover{
+    /* transition-duration: 200ms; */
+    color: var(--navy-blue);
+    font-weight: 600;
+}
+
+nav .signin-btn{
+    display: inline-block;
+    border: none;
+    padding: 5px 20px;
+    margin-right: 10%;
+}
+
+/* Hero section */
+
+.intro-section{
+    margin: 20px 0px;
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+}
+.intro-section .left-section{
+    float: left;
+    margin-top: 130px;
+}
+.left-section h1{
+    font-family: "Roboto";
+    font-size: 4.5rem;
+    color: var(--navy-blue);
+}
+
+.left-section h4{
+    margin-top: 30px;
+    width: 350px;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--light-navry-blue);
+    line-height: 25px;
+
+}
+.learn-more-btn{
+    padding: 10px 30px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+button{
+    background-image: linear-gradient(to right,#9424F0,  #fa9ee7 );
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.intro-section .imgs-div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 35%;
+    margin-bottom:-60px;
+
+}
+.imgs-div .vector-img~img{
+    position: absolute;
+    bottom:1;
+    left: 0;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+.imgs-div .vector-dot~img{
+    height: 750px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -460px;
+    margin-left: -20px;
+}
